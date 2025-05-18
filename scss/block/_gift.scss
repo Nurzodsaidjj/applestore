@@ -1,0 +1,208 @@
+.gift {
+  padding-top: 40px;
+}
+.gift__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--1);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.gift__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.gift__item_img{
+  text-align: center;
+}
+.gift__item {
+  padding: 20px 8px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.gift__item:nth-child(1) {
+  background: linear-gradient(180deg, #fe94a6 0%, #f2f2f2 100%);
+}
+.gift__item:nth-child(2) {
+  background: linear-gradient(180deg, #e685ff 0%, #f2f2f2 100%);
+}
+.gift__item:nth-child(3) {
+  background: linear-gradient(180deg, #7de9ff 0%, #f2f2f2 100%);
+}
+.gift__item:nth-child(4) {
+  background: linear-gradient(180deg, #ffe685 0%, #f6f6f6 100%);
+}
+.gift__item:nth-child(5) {
+  background: linear-gradient(
+    179deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(176, 224, 167, 1) 22%,
+    rgba(242, 242, 242, 1) 100%
+  );
+}
+.gift__item_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--1);
+  margin-bottom: 8px;
+}
+.gift__item_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--07);
+  margin-bottom: 85px;
+}
+.gift__btn {
+  padding: 17px 60px;
+  border: 1px solid var(--prime);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1210px) {
+  .gift__list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .gift__item {
+    padding: 32px;
+  }
+  .gift__item:nth-child(1) {
+    background: var(--light-grey);
+  }
+  .gift__item:nth-child(2) {
+    background: var(--light-grey);
+  }
+  .gift__item:nth-child(3) {
+    background: var(--light-grey);
+  }
+  .gift__item:nth-child(4) {
+    background: var(--light-grey);
+  }
+  .gift__item:nth-child(5) {
+    background: var(--light-grey);
+  }
+  .gift__item_block {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+  .gift__item_text {
+    margin-bottom: 0;
+  }
+  .gift__item_title {
+    text-align: start;
+    margin-bottom: 18px;
+  }
+  .gift__item_text {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gift__item_img {
+    width: 80px;
+    height: 80px;
+    img {
+      object-fit: contain;
+    }
+  }
+  .gift__item_block {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .gift__item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gift {
+    padding-top: 24px;
+  }
+  .gift__item{
+    padding: 16px;
+  }
+  .gift__item_img {
+    display: none;
+  }
+  .gift__btn {
+    display: none;
+  }
+  .gift__title {
+    font-size: 24px;
+  }
+  .gift__item_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .gift__item_text{
+    margin-bottom: 16px;
+  }
+  .gift__content {
+    .gift__item_title,
+    .gift__item_text {
+      text-align: center;
+    }
+    position: relative;
+  }
+  .gift1 .gift__item_title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../img/gift1.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.gift2 .gift__item_title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../img/gift2.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.gift3 .gift__item_title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../img/gift3.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.gift4 .gift__item_title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../img/gift4.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.gift5 .gift__item_title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../img/gift5.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+}

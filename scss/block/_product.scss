@@ -58,6 +58,7 @@
   font-size: 24px;
   text-align: center;
   color: var(--1);
+  margin-bottom: 10px;
 }
 
 .card__image {
@@ -188,7 +189,7 @@
   }
 }
 
-@media (max-width: 632px) {
+@media (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
     gap: 16px;

@@ -1,0 +1,28 @@
+.newer{
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+.newer__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--prime);
+  margin-bottom: 24px;
+}
+.card:nth-child(1) {
+  .card__btn {
+    background: var(--prime);
+  }
+}
+.card:nth-child(8) {
+  .card__btn {
+    background: var(--prime);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .newer{
+        padding-top: 24px;
+    }
+}
